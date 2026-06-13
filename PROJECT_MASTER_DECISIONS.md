@@ -37,3 +37,15 @@ Static business classifications are intentionally avoided.
 Objective:
 
 Track where institutional capital is flowing NOW.
+
+Future Development Philosophy
+
+Current project goal is completion, not perfection.
+
+Potential enhancements must be documented in FUTURE_ENHANCEMENTS.md and NOT added immediately.
+
+Rule:
+
+Do not continuously modify core architecture after production stability is achieved.
+
+New features must be validated against real market behavior first.

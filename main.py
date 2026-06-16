@@ -390,7 +390,8 @@ print(
         "Mapped_Theme",
         "Total_Stocks",
         "Strong_Stocks",
-        "Breadth_Percent"
+        "Breadth_Percent",
+        "Weighted_Breadth_Score"
     ]]
 
     .head(20)

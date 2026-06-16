@@ -1,3 +1,6 @@
+import math
+
+
 def build_theme_breadth(stocks):
 
     # ==========================================
@@ -66,7 +69,7 @@ def build_theme_breadth(stocks):
 
 
     # ==========================================
-    # BREADTH %
+    # STANDARD BREADTH %
     # ==========================================
 
     breadth["Breadth_Percent"] = round(
@@ -79,12 +82,31 @@ def build_theme_breadth(stocks):
 
 
     # ==========================================
-    # SORT STRONGEST THEMES FIRST
+    # WEIGHTED BREADTH SCORE
+    # ==========================================
+
+    breadth["Weighted_Breadth_Score"] = round(
+
+        breadth["Breadth_Percent"] *
+
+        breadth["Total_Stocks"].apply(
+
+            lambda x: math.log(x + 1)
+
+        ),
+
+        2
+
+    )
+
+
+    # ==========================================
+    # SORT BY WEIGHTED SCORE
     # ==========================================
 
     breadth = breadth.sort_values(
 
-        "Breadth_Percent",
+        "Weighted_Breadth_Score",
 
         ascending=False
 

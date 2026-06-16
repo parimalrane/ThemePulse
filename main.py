@@ -55,7 +55,6 @@ etf_df = assign_theme_score(etf_df)
 
 etf_master = etf_df.copy()
 
-print("VALID ETFs =", len(etf_master))
 
 # ==========================================
 # STEP 1 — BUILD THEME STRENGTH TABLE
@@ -290,6 +289,35 @@ short_watchlist = short_watchlist.sort_values(
 
 institutional_leaders = build_institutional_leaders(stocks)
 
+
+
+import pandas as pd
+
+
+# ==========================================
+# BUILD LONG CANDIDATE UNIVERSE
+# ==========================================
+
+long_candidates = pd.concat(
+
+    [long_watchlist, institutional_leaders]
+
+)
+
+long_candidates = long_candidates.drop_duplicates(
+
+    subset="Ticker"
+
+)
+
+long_candidates = long_candidates.sort_values(
+
+    "Composite_Score",
+    ascending=False
+
+)
+
+
 # ==========================================
 # HEADER
 # ==========================================
@@ -399,17 +427,15 @@ print(
 
 print("\n\n")
 
+print()
 
-# ==========================================
-# TOP LONG WATCHLIST
-# ==========================================
+print("LONG CANDIDATE UNIVERSE")
 
-print("TOP LONG WATCHLIST")
 print("----------------------------")
 
 print(
 
-    long_watchlist[[
+    long_candidates[[
         "Ticker",
         "Mapped_Theme",
         "Theme_Class",
@@ -417,12 +443,15 @@ print(
         "Composite_Score"
     ]]
 
-    .head(20)
+    .head(40)
 
-)
+    )
 
 print("\n\n")
 
+print()
+
+print("----------------------------")
 
 # ==========================================
 # TOP SHORT WATCHLIST
@@ -447,25 +476,6 @@ print(
 
 print("\n\n")
 
-
-# ==========================================
-# TOP INSTITUTIONAL LEADERS
-# ==========================================
-
-print("TOP 20 INSTITUTIONAL LEADERS")
-print("----------------------------")
-
-print(
-
-    institutional_leaders[[
-        "Ticker",
-        "Mapped_Theme",
-        "Theme_Class",
-        "RS_Rating",
-        "Composite_Score"
-    ]]
-
-)
 
 print("\n")
 print("==============================================")

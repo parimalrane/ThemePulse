@@ -421,3 +421,75 @@ ThemePulse Pro
 Created: 2026-06-12
 Architecture Frozen: YES
 Production Ready: YES
+
+
+
+VERSION 1.1 — ETF Pipeline Restoration
+
+Major Fixes
+
+• Restored ETF.csv as active input source
+• Removed stale etf_master.csv dependency
+• Reconnected etf_engine.py to main.py
+• Reconnected theme_parser.py to ETF processing pipeline
+• Integrated curated ETF whitelist (42 ETFs)
+• Eliminated country/region ETF contamination
+
+Results
+
+• Market rotation now reflects US institutional sector rotation
+• Theme classification significantly improved
+• Long watchlist quality improved substantially
+
+Pending Issues
+
+• Breadth engine redesign
+• Institutional leaders duplicate output
+• ETF theme mapping cleanup
+• Unknown stock mapping cleanup
+
+
+ETF DISCOVERY ENGINE
+
+Purpose
+
+Tabela currently uses a manually curated Allowed ETF universe.
+
+Risk
+
+New institutional themes may emerge which are not currently tracked.
+
+Example
+
+Artificial Intelligence
+Quantum Computing
+Nuclear Energy
+Robotics Automation
+Defense AI
+Space Infrastructure
+
+Future Solution
+
+Build ETF Discovery Engine.
+
+Workflow
+
+1. Scan complete ETF.csv universe daily
+
+2. Exclude currently approved Allowed ETFs
+
+3. Identify strongest untracked ETFs using:
+
+   • ETF RS Rating
+   • 3 Month Performance
+   • Relative Volume / AUM (future)
+
+4. Generate Candidate ETF Report
+
+5. Manual approval required before adding new ETF to allowed_etfs.py
+
+Principle
+
+Tabela should detect emerging institutional themes automatically but should never auto-add ETFs without manual review.
+
+

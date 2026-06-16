@@ -1,5 +1,5 @@
 import pandas as pd
-
+from allowed_etfs import ALLOWED_ETFS
 
 # ---------------------------------------------------
 # ETF Valid Categories
@@ -85,6 +85,9 @@ EXCLUDE_KEYWORDS = [
 def filter_valid_etfs(df):
 
     df = df.copy()
+
+    # FIRST FILTER → only curated ETF universe
+    df = df[df["Ticker"].isin(ALLOWED_ETFS)]
 
     def is_valid(row):
 

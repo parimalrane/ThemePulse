@@ -7,7 +7,7 @@ def map_stock_theme(industry, sector):
     sector = str(sector).lower().strip()
 
     # ==========================================
-    # LEVEL 1 — SEMICONDUCTORS / AI / SOFTWARE
+    # SEMICONDUCTORS / AI / SOFTWARE
     # ==========================================
 
     if "semiconductor" in industry:
@@ -44,7 +44,7 @@ def map_stock_theme(industry, sector):
         return "Software"
 
     # ==========================================
-    # LEVEL 2 — HEALTHCARE
+    # HEALTHCARE
     # ==========================================
 
     elif "medical" in industry:
@@ -69,7 +69,7 @@ def map_stock_theme(industry, sector):
         return "Pharma"
 
     # ==========================================
-    # LEVEL 3 — FINANCIALS
+    # FINANCIALS
     # ==========================================
 
     elif "insurance" in industry:
@@ -78,27 +78,17 @@ def map_stock_theme(industry, sector):
     elif "bank" in industry:
         return "Banking"
 
-    elif "financial" in industry:
+    elif "financial services" in industry:
         return "Banking"
 
     elif "capital markets" in industry:
         return "Brokers/ Capital markets"
 
     elif "asset management" in industry:
-        return "Banking"
+        return "Brokers/ Capital markets"
 
     # ==========================================
-    # LEVEL 4 — REAL ESTATE
-    # ==========================================
-
-    elif "reit" in industry:
-        return "REITs"
-
-    elif "real estate" in industry:
-        return "REITs"
-
-    # ==========================================
-    # LEVEL 5 — ENERGY
+    # ENERGY
     # ==========================================
 
     elif "pipeline" in industry:
@@ -129,7 +119,7 @@ def map_stock_theme(industry, sector):
         return "Infrastructure"
 
     # ==========================================
-    # LEVEL 6 — MATERIALS / MINING
+    # MATERIALS / MINING
     # ==========================================
 
     elif "rare earth" in industry:
@@ -147,9 +137,6 @@ def map_stock_theme(industry, sector):
     elif "silver" in industry:
         return "Silver Mining"
 
-    elif "metal products" in industry:
-        return "Copper Mining"
-
     elif "steel" in industry:
         return "Copper Mining"
 
@@ -160,7 +147,7 @@ def map_stock_theme(industry, sector):
         return "Gold Mining"
 
     # ==========================================
-    # LEVEL 7 — INDUSTRIALS / TRANSPORT
+    # INDUSTRIALS / DEFENSE / TRANSPORT
     # ==========================================
 
     elif "aerospace" in industry:
@@ -181,42 +168,21 @@ def map_stock_theme(industry, sector):
     elif "logistics" in industry:
         return "Transportation/Shipping"
 
-    elif "agriculture" in industry:
-        return "Agribusiness"
-
     elif "construction" in industry:
-        return "Infrastructure"
-
-    elif "building products" in industry:
-        return "Infrastructure"
-
-    elif "building materials" in industry:
         return "Infrastructure"
 
     elif "engineering" in industry:
         return "Infrastructure"
 
-    elif "manufacturing" in industry:
-        return "Infrastructure"
-
     # ==========================================
-    # LEVEL 8 — INTERNET / TELECOM
+    # CONNECTIVITY / NETWORKING
     # ==========================================
-
-    elif "technology services" in industry:
-        return "Broad"
-
-    elif "internet - services" in industry:
-        return "Internet"
 
     elif "communications equipment" in industry:
-        return "Telecom"
+        return "Optical Networking"
 
     elif "networking" in industry:
-        return "Internet"
-
-    elif "internet" in industry:
-        return "Internet"
+        return "Optical Networking"
 
     elif "telecommunications" in industry:
         return "Telecom"
@@ -224,54 +190,18 @@ def map_stock_theme(industry, sector):
     elif "wireless communications" in industry:
         return "Telecom"
 
-    elif "cable television" in industry:
-        return "Telecom"
-
-    elif "broadband" in industry:
-        return "Telecom"
-
     # ==========================================
-    # LEVEL 9 — CONSUMER / RETAIL
+    # REAL ESTATE
     # ==========================================
 
-    elif "apparel" in industry:
-        return "Broad"
+    elif "reit" in industry:
+        return "REITs"
 
-    elif "footwear" in industry:
-        return "Broad"
-
-    elif "retail" in industry:
-        return "Broad"
-
-    elif "consumer products" in industry:
-        return "Broad"
-
-    elif "beverages" in industry:
-        return "Broad"
-
-    elif "food products" in industry:
-        return "Broad"
-
-    elif "packaged foods" in industry:
-        return "Broad"
-
-    elif "restaurants" in industry:
-        return "Broad"
-
-    elif "casual dining" in industry:
-        return "Broad"
-
-    elif "gaming" in industry:
-        return "Broad"
-
-    elif "entertainment" in industry:
-        return "Broad"
-
-    elif "travel services" in industry:
-        return "Transportation/Shipping"
+    elif "real estate" in industry:
+        return "REITs"
 
     # ==========================================
-    # LEVEL 10 — UTILITIES
+    # UTILITIES
     # ==========================================
 
     elif "electric utilities" in industry:
@@ -283,36 +213,18 @@ def map_stock_theme(industry, sector):
     elif "renewable utilities" in industry:
         return "Infrastructure"
 
-    elif "water utilities" in industry:
-        return "Water"
-
     # ==========================================
-    # SECTOR FALLBACK
+    # SECTOR FALLBACK (MINIMAL)
     # ==========================================
-
-    elif "technology" in sector:
-        return "Broad"
 
     elif "medical" in sector:
         return "Healthcare"
-
-    elif "finance" in sector:
-        return "Banking"
 
     elif "utilities" in sector:
         return "Infrastructure"
 
     elif "energy" in sector:
         return "Exploration"
-
-    elif "industrial" in sector:
-        return "Infrastructure"
-
-    elif "consumer" in sector:
-        return "Broad"
-
-    elif "communication" in sector:
-        return "Telecom"
 
     elif "real estate" in sector:
         return "REITs"

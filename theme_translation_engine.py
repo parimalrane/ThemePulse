@@ -14,6 +14,7 @@ THEME_TRANSLATION = {
     "AI Sensors": "Artificial Intelligence",
     "Autonomous Driving AI": "Artificial Intelligence",
     "AI Power Infrastructure": "Artificial Intelligence",
+    "AI Platform": "Artificial Intelligence",
 
     # ==========================================
     # SEMICONDUCTORS
@@ -26,6 +27,7 @@ THEME_TRANSLATION = {
     "Wireless Chips": "Semiconductors",
     "Foundry": "Semiconductors",
     "Optical Networking": "Semiconductors",
+    "Data Storage": "Semiconductors",
 
     # ==========================================
     # CLOUD / SOFTWARE
@@ -68,7 +70,9 @@ THEME_TRANSLATION = {
     "Oil Services": "Equipment and services",
     "Natural Gas": "natural gas",
     "Nuclear Infrastructure": "Uranium Mining",
-
+    "Electronics Manufacturing": "Infrastructure",
+    "Integrated Energy": "Energy",
+    "Oil Services": "Energy Services",
     # ==========================================
     # FINTECH / DIGITAL ASSETS
     # ==========================================

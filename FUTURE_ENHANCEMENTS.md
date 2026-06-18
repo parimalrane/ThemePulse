@@ -749,3 +749,283 @@ Example:
 
 
 
+
+
+## PRIORITY FUTURE ENHANCEMENT — SCALABLE THEME CLASSIFICATION ENGINE
+
+Current limitation:
+
+ThemePulse uses hardcoded:
+
+Ticker → Theme mapping.
+
+Problem:
+
+Company business models evolve over time.
+
+Hardcoded classification becomes outdated.
+
+Example:
+
+META
+
+2022 → Social Media
+
+2026 → AI Platform
+
+Future → Robotics / Wearables
+
+TSLA
+
+2022 → EV
+
+2026 → Autonomous Mobility
+
+Future → Robotics
+
+---
+
+Future architecture design:
+
+Layer 1
+
+Ticker → Business Category
+
+Example:
+
+NVDA → Semiconductor GPU
+
+MSFT → Cloud Software
+
+META → Digital Platform
+
+XOM → Integrated Energy
+
+---
+
+Layer 2
+
+Business Category → Market Theme Translation
+
+Example:
+
+Semiconductor GPU → Artificial Intelligence
+
+Cloud Software → Cloud Computing
+
+Integrated Energy → Energy
+
+---
+
+Layer 3
+
+Automatic discovery engine
+
+Process:
+
+Find strongest RS_Rating stocks missing from classification dictionary.
+
+Print review candidates.
+
+Purpose:
+
+Reduce manual maintenance burden.
+
+Improve long term scalability.
+
+Architecture complexity intentionally delayed for future version.
+
+
+
+
+
+## THEME ENGINE V2 (Graph Based Architecture)
+
+Current limitation:
+
+One ticker mapped to one theme.
+
+Problem:
+
+Institutional capital rotates through narratives, not isolated sectors.
+
+New architecture:
+
+Ticker → Multiple Business Categories
+
+Business Category → Multiple Institutional Themes
+
+Institutional Themes carry weighted contribution percentages.
+
+Example:
+
+NVDA
+
+GPU Compute → AI (60%), Semiconductors (40%)
+
+Autonomous Driving → AI (70%), Robotics (30%)
+
+Benefits:
+
+* More realistic institutional capital flow detection
+* Better theme clustering
+* Better long and short candidate ranking
+* Scalable architecture
+* Reduced manual maintenance
+
+Priority:
+
+Highest future architecture upgrade
+
+
+
+
+# FUTURE_ENHANCEMENTS.md
+
+## THEMEPULSE V2 ROADMAP
+
+Architecture Status: PRODUCTION STABLE
+Core Philosophy: Institutional Capital Rotation First
+
+---
+
+## CURRENT PRIORITY ORDER
+
+### PRIORITY 1 — AUTOMATED LOGGING ENGINE (HIGHEST PRIORITY)
+
+Build fully automated logging system.
+
+Requirements:
+
+* Zero manual copy/paste
+* Trigger automatically every run of main.py
+* Save output locally
+
+Files to create:
+
+* logger_engine.py
+
+Folder structure:
+
+logs/
+daily/
+weekly/
+monthly/
+rotation/
+
+Daily log requirements:
+
+Store:
+
+* Leading Themes
+* Emerging Themes
+* Weakening Themes
+* Lagging Themes
+* Top Long Candidates
+* Top Short Candidates
+
+Weekly log requirements:
+
+Store:
+
+* Dominant Themes
+* New Emerging Themes
+* Themes Losing Strength
+* Best Long Candidates
+* Best Short Candidates
+
+Monthly log requirements:
+
+Store:
+
+* Dominant Monthly Themes
+* Improving Themes
+* Deteriorating Themes
+* Consistent Long Candidates
+* Consistent Short Candidates
+
+---
+
+### PRIORITY 2 — ROTATION DELTA ENGINE
+
+Build automatic rotation comparison engine.
+
+Purpose:
+
+Compare latest output against previous historical logs.
+
+New file:
+
+* rotation_tracker.py
+
+Detect:
+
+* New Leaders
+* Losing Leaders
+* Improving Themes
+* Deteriorating Themes
+
+Store inside:
+
+logs/rotation/
+
+---
+
+### PRIORITY 3 — WEEKLY INSTITUTIONAL REVIEW SYSTEM
+
+Workflow:
+
+Every week review ThemePulse weekly logs.
+
+Primary objective:
+
+Detect institutional capital rotation.
+
+Questions:
+
+* Which themes gained sponsorship?
+* Which themes lost sponsorship?
+* Which themes improved?
+* Which themes deteriorated?
+
+---
+
+### PRIORITY 4 — MONTHLY STRUCTURAL REVIEW
+
+Monthly review of historical weekly logs.
+
+Primary objective:
+
+Detect regime shifts.
+
+Questions:
+
+* Which themes consistently led?
+* Which themes consistently weakened?
+* Which sectors deserve focus next month?
+
+---
+
+### PRIORITY 5 — CLASSIFICATION DATABASE IMPROVEMENT
+
+Lower priority.
+
+Improve:
+
+company_theme_engine.py
+
+Approach:
+
+Gradually add 5–10 missing stocks per week.
+
+No mass rebuild.
+
+No attempt to classify entire market.
+
+---
+
+STRICT RULE
+
+Do NOT redesign architecture again without strong reason.
+
+

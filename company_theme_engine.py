@@ -20,8 +20,10 @@ COMPANY_THEME = {
     "MPWR": "AI Power Infrastructure",
     "VRT": "AI Power Infrastructure",
     "ETN": "AI Power Infrastructure",
-    "TTMI": "AI Infrastructure",
-    "CLS": "AI Infrastructure",
+
+    # FIXED
+    "TTMI": "Electronics Manufacturing",
+    "CLS": "Electronics Manufacturing",
 
     # ==========================================
     # SEMICONDUCTORS
@@ -32,8 +34,12 @@ COMPANY_THEME = {
     "LRCX": "Semiconductor Equipment",
     "AMAT": "Semiconductor Equipment",
     "KLAC": "Semiconductor Equipment",
+
     "MU": "Memory",
-    "STX": "Memory",
+
+    # FIXED
+    "STX": "Data Storage",
+
     "WDC": "Memory",
     "GFS": "Foundry",
     "TSM": "Foundry",
@@ -95,8 +101,11 @@ COMPANY_THEME = {
     "TTD": "Digital Advertising",
     "RDDT": "Social Media Platform",
     "PINS": "Social Media Platform",
-    "META": "AI Infrastructure",
-    "GOOG": "AI Infrastructure",
+
+    # FIXED
+    "META": "AI Platform",
+    "GOOG": "AI Platform",
+
     "SNAP": "Social Media Platform",
 
     # ==========================================
@@ -111,6 +120,24 @@ COMPANY_THEME = {
     "OKLO": "Nuclear Infrastructure",
     "RUN": "Solar Infrastructure",
     "ARRY": "Solar Infrastructure",
+
+    # ==========================================
+    # TRADITIONAL ENERGY (NEW)
+    # ==========================================
+
+    "XOM": "Integrated Energy",
+    "CVX": "Integrated Energy",
+    "SHEL": "Integrated Energy",
+    "BP": "Integrated Energy",
+
+    "SLB": "Oil Services",
+    "HAL": "Oil Services",
+    "BKR": "Oil Services",
+
+    "MUR": "Exploration",
+    "OXY": "Exploration",
+    "DVN": "Exploration",
+    "OVV": "Exploration",
 
     # ==========================================
     # AUTONOMY / ROBOTICS / DEFENSE
@@ -158,5 +185,31 @@ COMPANY_THEME = {
 
     "LITE": "Optical Networking",
     "CIEN": "Optical Networking",
+
+
+    # STORAGE / MEMORY / SEMI EXTENSIONS
+    "SNDK": "Memory",
+    "SIMO": "Memory",
+
+    # OPTICAL / CONNECTIVITY
+    "COHR": "Optical Networking",
+    "VIAV": "Optical Networking",
+    "LWLG": "Optical Networking",
+    "GLW": "Optical Infrastructure",
+
+    # SEMICONDUCTOR EQUIPMENT
+    "ONTO": "Semiconductor Equipment",
+
+    # ELECTRONICS MANUFACTURING
+    "FLEX": "Electronics Manufacturing",
+    "JBL": "Electronics Manufacturing",
+    "AVT": "Electronics Manufacturing",
+
+    # DIGITAL ASSET INFRASTRUCTURE
+    "RIOT": "Digital Assets Infrastructure",
+    "CIFR": "Digital Assets Infrastructure",
+    "BTDR": "Digital Assets Infrastructure",
+    "HUT": "Digital Assets Infrastructure",
+    "MARA": "Digital Assets Infrastructure",
 
 }

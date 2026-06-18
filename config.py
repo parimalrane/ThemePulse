@@ -1,75 +1,13 @@
-ETF_THEME_RULES = {
+COMPOSITE_WEIGHTS = {
 
-    "Semiconductors": [
-        "semiconductors"
-    ],
 
-    "Artificial Intelligence": [
-        "artificial intelligence",
-        "ai"
-    ],
+"RS_WEIGHT": 0.40,
 
-    "Software": [
-        "software"
-    ],
+"THEME_WEIGHT": 0.25,
 
-    "Cybersecurity": [
-        "cybersecurity"
-    ],
+"MARGIN_WEIGHT": 0.05,
 
-    "Robotics": [
-        "robotics"
-    ],
+"ZACKS_WEIGHT": 0.10
 
-    "Solar Energy": [
-        "solar"
-    ],
 
-    "Energy Infrastructure": [
-        "energy",
-        "mlp",
-        "oil",
-        "gas"
-    ],
-
-    "Cloud Computing": [
-        "cloud"
-    ],
-
-    "Telecommunications": [
-        "telecom",
-        "communication services"
-    ],
-
-    "Emerging Markets": [
-        "emerging markets"
-    ],
-
-    "Taiwan Technology": [
-        "taiwan"
-    ],
-
-    "South Korea Equity": [
-        "south korea"
-    ],
-
-    "Real Estate": [
-        "reit",
-        "real estate"
-    ],
-
-    "Aerospace & Defense": [
-        "aerospace",
-        "defense"
-    ],
-
-    "Rare Earth Materials": [
-        "lithium",
-        "rare earth"
-    ],
-
-    "Clean Energy": [
-        "clean energy",
-        "socially responsible"
-    ]
 }

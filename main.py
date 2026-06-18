@@ -23,6 +23,7 @@ from breadth_engine import build_theme_breadth
 from institutional_leaders_engine import build_institutional_leaders
 from watchlist_engine import build_long_watchlist
 from short_engine import build_short_watchlist
+from theme_hierarchy import THEME_PARENT_MAP
 
 
 # LOAD FILES
@@ -86,6 +87,7 @@ theme_strength = theme_strength.sort_values(
     ascending=False
 
 ).reset_index(drop=True)
+
 
 total_themes = len(theme_strength)
 
@@ -183,7 +185,6 @@ stocks = calculate_sales_score(stocks)
 
 stocks = calculate_zacks_score(stocks)
 
-
 # ==========================================
 # STEP 4 — ASSIGN FINAL THEME SCORE
 # ==========================================
@@ -194,13 +195,18 @@ theme_scores = []
 for _, row in stocks.iterrows():
 
     etf_theme = row["ETF_Theme"]
+    mapped_theme = row["Mapped_Theme"]
+
+    # Resolve child theme to parent ETF theme
+
+    if mapped_theme in THEME_PARENT_MAP:
+        etf_theme = THEME_PARENT_MAP[mapped_theme]
 
     # Normal ETF classified stocks
 
     if etf_theme in theme_class_map:
 
         theme_class = theme_class_map[etf_theme]
-
         theme_score = theme_score_map[etf_theme]
 
     # Unknown theme stocks
@@ -212,14 +218,12 @@ for _, row in stocks.iterrows():
         if (
 
             row["RS_Rating"] >= 90 and
-
             row["Sales_Score"] >= 80 and
-
             row["Zacks_Score"] >= 85
+
         ):
 
             theme_class = "Unclassified Leader"
-
             theme_score = 75
 
             print("UNCLASSIFIED LEADER:", row["Ticker"])
@@ -227,17 +231,14 @@ for _, row in stocks.iterrows():
         else:
 
             theme_class = "Unknown"
-
             theme_score = 20
 
     theme_classes.append(theme_class)
-
     theme_scores.append(theme_score)
 
 
 stocks["Theme_Class"] = theme_classes
 stocks["Theme_Score"] = theme_scores
-
 
 # ==========================================
 # STEP 5 — MARGIN SCORE
@@ -373,13 +374,7 @@ print("----------------------------")
 
 print()
 
-print(theme_strength.sort_values(
 
-    "ETF_RS_Raw",
-
-    ascending=False
-
-).to_string(index=False))
 
 print("\n\n")
 
@@ -505,6 +500,8 @@ print()
 
 print("----------------------------")
 
+
+
 # ==========================================
 # SHORT CANDIDATE UNIVERSE
 # ==========================================
@@ -522,14 +519,31 @@ print(
         "Composite_Score"
     ]]
 
-    .head(20).to_string(index=False)
+    .head(40).to_string(index=False)
 
 )
 
 print("\n\n")
 
 
+
+
 print("\n")
 print("==============================================")
 print("END OF THEMEPULSE SCAN")
 print("==============================================")
+
+
+
+
+watch = ["NVDA","AVGO","SMCI","PLTR","META","GOOG","RIOT","CIFR","BTDR","GLW","ONTO","FLEX","JBL"]
+
+print("\nKEY STOCK AUDIT")
+print("----------------------------")
+
+print(
+    stocks[
+        stocks["Ticker"].isin(watch)
+    ][["Ticker","Mapped_Theme","Theme_Class","RS_Rating","Composite_Score"]]
+    .to_string(index=False)
+)

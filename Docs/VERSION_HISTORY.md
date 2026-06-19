@@ -656,3 +656,29 @@ Completed:
 Architecture philosophy locked:
 
 ThemePulse prioritizes accelerating institutional capital rotation rather than established market leaders.
+
+
+
+VERSION 2.1
+
+Major Enhancement:
+
+Institutional ETF Filtering Layer added.
+
+New Rule:
+
+Only ETFs with Market Value >= 200 million are considered for theme scoring.
+
+Reason:
+
+Small niche ETFs were distorting theme rankings and generating false institutional signals.
+
+Architecture Impact:
+
+Improved signal quality.
+
+Removed false leadership caused by low-liquidity ETF outliers.
+
+Current threshold:
+
+MIN_MARKET_VALUE = 200 million.

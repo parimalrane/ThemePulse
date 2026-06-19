@@ -137,3 +137,12 @@ This principle applies to:
 * Future institutional behavior engine
 
 This rule is permanent architecture guidance for all future development.
+
+
+ETF universe expansion improved coverage.
+
+But institutional capital detection requires filtering by ETF size.
+
+Small niche ETFs distort market rotation signals.
+
+ThemePulse must prioritize institutional-grade ETFs only.

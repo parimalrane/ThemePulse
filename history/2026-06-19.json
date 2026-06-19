@@ -1,55 +1,43 @@
 {
     "date": "2026-06-19",
     "leading_themes": [
-        "Crude Oil",
         "Semiconductors",
-        "Networking",
-        "Telecom",
         "Artificial Intelligence",
-        "Copper Mining",
+        "Telecom",
+        "Software",
         "Rare Earth/Lithium",
-        "Steel",
-        "Clean tech",
-        "Automobiles",
-        "Software"
+        "Copper Mining",
+        "Transportation/Shipping",
+        "Banking"
     ],
     "emerging_themes": [
-        "Banking",
-        "Biotech",
-        "Gasoline",
-        "Transportation/Shipping",
+        "Regional Banks",
         "Healthcare",
-        "Community Banks",
+        "Biotech",
         "Copper",
+        "Pharma",
         "Engineering and Construction",
         "Brokers/ Capital markets",
-        "Pharma",
-        "Infrastructure"
+        "Aerospace & Defense"
     ],
     "weakening_themes": [
         "Cloud Computing",
-        "Regional Banks",
-        "Aerospace & Defense",
         "REITs",
-        "Media",
-        "Refining & Marketing",
-        "Coal",
+        "Infrastructure",
+        "Crude Oil",
+        "Retail",
         "Nuclear Power",
-        "Brent Oil",
-        "MLP",
-        "Insurance"
+        "Insurance",
+        "MLP"
     ],
     "lagging_themes": [
+        "Brent Oil",
         "Internet",
         "Exploration",
-        "Retail",
-        "Leisure and Entertainment",
-        "Food & beverage",
-        "Natural Gas",
-        "Agribusiness",
-        "Timber",
         "Uranium Mining",
         "natural gas",
+        "Agribusiness",
+        "Natural Gas",
         "Medical Devices"
     ],
     "top_longs": [
@@ -69,9 +57,9 @@
         "OUST",
         "PENG",
         "MXL",
+        "RIOT",
         "ARM",
         "ASX",
-        "TXN",
         "HPE"
     ],
     "top_shorts": [

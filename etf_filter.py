@@ -1,3 +1,5 @@
+from config import ETF_FILTERS
+
 # ==========================================
 # ETF FILTER ENGINE
 # ThemePulse V2
@@ -146,3 +148,14 @@ def filter_valid_etfs(etf_df):
     filtered_etfs = etf_df[valid_mask].copy()
 
     return filtered_etfs
+
+
+def filter_institutional_etfs(df):
+
+    df = df[
+
+        df["Market Value (mil)"] >= ETF_FILTERS["MIN_MARKET_VALUE"]
+
+    ].copy()
+
+    return df

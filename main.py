@@ -25,6 +25,22 @@ from short_engine import build_short_watchlist
 from theme_hierarchy import THEME_PARENT_MAP
 from etf_filter import filter_valid_etfs
 from snapshot_engine import save_daily_snapshot
+from etf_filter import filter_institutional_etfs
+
+
+
+# ==========================================
+# DEBUG THEME AUDIT
+# ==========================================
+
+AUDIT_THEMES = [
+
+    "Crude Oil",
+    "Aerospace & Defense",
+    "Software",
+    "Banking"
+
+]
 
 
 print("\n")
@@ -43,14 +59,13 @@ stocks = stocks[
 # LOAD ETF FILES
 etf_df = pd.read_csv("ETF.csv")
 
+
 # ETF PROCESSING PIPELINE
 etf_df = filter_valid_etfs(etf_df)
-
-
+etf_df = filter_institutional_etfs(etf_df)
 
 
 # CREATE THEME COLUMNS
-
 etf_df[["Sector","Theme","Subtheme"]] = etf_df[
     "Investment Strategy"
 ].apply(

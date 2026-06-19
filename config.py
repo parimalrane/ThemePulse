@@ -30,3 +30,12 @@ SHORT_FILTERS = {
     "MAX_ZACKS": 40
 
 }
+
+
+ETF_FILTERS = {
+
+    "MIN_MARKET_VALUE": 200
+
+}
+
+

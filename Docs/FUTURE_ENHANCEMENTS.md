@@ -419,3 +419,26 @@ Stock scanner second.
 ---
 
 END OF ROADMAP
+
+
+
+PRIORITY INVESTIGATION
+
+ETF SIGNAL QUALITY VALIDATION
+
+Objective:
+
+Validate whether expanded ETF universe introduces signal distortion.
+
+Possible issue:
+
+Large ETF universe may contain low quality ETFs producing false theme leadership.
+
+Examples observed:
+
+- Crude Oil suspiciously leading
+- Aerospace & Defense inconsistent classification
+
+Future possible solution:
+
+ETF Quality Filter layer before theme scoring.

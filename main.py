@@ -24,6 +24,7 @@ from watchlist_engine import build_long_watchlist
 from short_engine import build_short_watchlist
 from theme_hierarchy import THEME_PARENT_MAP
 from etf_filter import filter_valid_etfs
+from snapshot_engine import save_daily_snapshot
 
 
 print("\n")
@@ -379,6 +380,40 @@ print("==============================================")
 print("\n")
 
 
+
+# ==========================================
+# STORE THEME LISTS FOR SNAPSHOT ENGINE
+# ==========================================
+
+leading_themes = theme_strength[
+    theme_strength["Theme"].isin(
+        [k for k, v in theme_class_map.items() if v == "Leading"]
+    )
+]["Theme"].tolist()
+
+
+emerging_themes = theme_strength[
+    theme_strength["Theme"].isin(
+        [k for k, v in theme_class_map.items() if v == "Emerging"]
+    )
+]["Theme"].tolist()
+
+
+weakening_themes = theme_strength[
+    theme_strength["Theme"].isin(
+        [k for k, v in theme_class_map.items() if v == "Weakening"]
+    )
+]["Theme"].tolist()
+
+
+lagging_themes = theme_strength[
+    theme_strength["Theme"].isin(
+        [k for k, v in theme_class_map.items() if v == "Lagging"]
+    )
+]["Theme"].tolist()
+
+
+
 # ==========================================
 # MARKET ROTATION SUMMARY
 # ==========================================
@@ -535,6 +570,24 @@ print(
     .head(40).to_string(index=False)
 
 )
+
+
+# ==========================================
+# SAVE DAILY MARKET SNAPSHOT
+# ==========================================
+
+save_daily_snapshot(
+
+    leading_themes,
+    emerging_themes,
+    weakening_themes,
+    lagging_themes,
+
+    long_candidates,
+    short_watchlist
+
+)
+
 
 print("\n")
 print("==============================================")

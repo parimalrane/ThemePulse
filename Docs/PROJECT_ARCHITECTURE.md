@@ -503,4 +503,31 @@ Final architecture target:
 
 Production-grade market intelligence engine.
 
+
+
+# CORE STOCK SELECTION PHILOSOPHY
+
+ThemePulse prioritizes accelerating institutional leaders rather than established market leaders.
+
+ThemePulse does NOT attempt to identify the best company.
+
+ThemePulse attempts to identify where institutional capital is rotating most aggressively right now.
+
+Examples:
+
+MU may rank above NVDA.
+
+CRDO may rank above AVGO.
+
+ALAB may rank above META.
+
+This is expected behavior.
+
+Priority:
+
+Recent acceleration > established leadership
+
+Swing trading opportunity > long-term company quality
+
+
 END OF DOCUMENT

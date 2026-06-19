@@ -1,21 +1,96 @@
-ThemePulse Monthly Maintenance Review
+Prompt 1 — Monthly institutional review
 
-Below are stocks detected by ThemePulse as strong leaders but currently not classified in company_profile_engine.py.
 
-Please do the following:
+Analyze attached ThemePulse historical snapshots.
 
-1. Analyze each company business model
+Your job:
 
-2. Determine institutional capital narrative behind current strength
+Study institutional capital rotation behavior over the entire period.
 
-3. Assign business categories
+Provide analysis in these sections:
 
-4. Assign institutional themes
+1. Which themes remained strongest consistently.
 
-5. Tell me whether existing theme_master.py requires new themes
+2. Which themes moved from Emerging to Leading.
 
-6. Give me exact code additions for company_profile_engine.py
+3. Which themes moved from Leading to Weakening.
 
-Stocks:
+4. Which themes showed repeated institutional accumulation.
 
-PASTE LIST HERE
+5. Which themes showed repeated institutional distribution.
+
+6. Identify strongest long-side institutional themes.
+
+7. Identify weakest short-side institutional themes.
+
+8. Identify new market narratives emerging.
+
+9. Detect unusual market structure changes.
+
+10. Give final institutional market outlook.
+
+Do not analyze individual stocks first.
+
+Focus on capital rotation behavior first.
+
+Stock analysis is secondary.
+
+
+===============================================================
+
+
+Prompt 2 — Rotation change review
+
+If you upload 30 days.
+
+Use:
+
+
+Analyze attached ThemePulse historical files.
+
+Compare day-to-day market rotation changes.
+
+Identify:
+
+1. Themes gaining momentum.
+
+2. Themes losing momentum.
+
+3. Stable institutional leadership.
+
+4. Early signs of sector rotation.
+
+5. Sectors under institutional distribution.
+
+6. Themes transitioning from lagging to emerging.
+
+7. Themes transitioning from leading to weakening.
+
+Provide institutional capital flow analysis.
+
+
+
+============================================
+
+Prompt 3 — Trade planning prompt
+
+Review attached ThemePulse historical snapshots.
+
+Based on institutional capital rotation patterns:
+
+1. Identify highest conviction long themes for next week.
+
+2. Identify sectors to avoid.
+
+3. Identify weak themes suitable for short watchlist.
+
+4. Identify sectors showing early accumulation.
+
+5. Identify sectors showing institutional exhaustion.
+
+Focus on swing trading opportunities for next 5-10 trading sessions.
+
+
+=========================================================================
+
+

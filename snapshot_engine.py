@@ -13,7 +13,6 @@ def save_daily_snapshot(
 ):
 
     # Create history folder if missing
-
     if not os.path.exists("history"):
         os.makedirs("history")
 
@@ -31,9 +30,21 @@ def save_daily_snapshot(
 
         "lagging_themes": lagging_themes,
 
-        "top_longs": long_candidates["Ticker"].head(20).tolist(),
+        "top_longs": [
+            {
+                "ticker": row["Ticker"],
+                "score": round(row["Composite_Score"], 2)
+            }
+            for _, row in long_candidates.head(20).iterrows()
+        ],
 
-        "top_shorts": short_candidates["Ticker"].head(20).tolist()
+        "top_shorts": [
+            {
+                "ticker": row["Ticker"],
+                "score": round(row["Composite_Score"], 2)
+            }
+            for _, row in short_candidates.head(20).iterrows()
+        ]
 
     }
 

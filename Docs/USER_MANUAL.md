@@ -1,4 +1,4 @@
-# ThemePulse User Manual
+# TABELA User Manual
 
 **Easy-to-Follow Step-by-Step Guide**
 
@@ -28,7 +28,7 @@ python --version
 
 ### Step 2: Install Dependencies
 ```bash
-cd c:\ThemePulse
+cd c:\TABELA
 pip install -r requirements.txt
 ```
 
@@ -57,11 +57,11 @@ python main.py
 
 Traditional investing asks: *"What's the best company?"*
 
-ThemePulse asks: *"Where is institutional money flowing RIGHT NOW?"*
+TABELA asks: *"Where is institutional money flowing RIGHT NOW?"*
 
 ### Why This Matters
 
-**Institutional investors control 70-80% of market volume.** They move money in themes, not individual stocks. By tracking their capital flows through ETFs, ThemePulse detects:
+**Institutional investors control 70-80% of market volume.** They move money in themes, not individual stocks. By tracking their capital flows through ETFs, TABELA detects:
 - Where smart money is accumulating
 - Where market narratives are shifting
 - Which themes are gaining or losing favor
@@ -73,7 +73,7 @@ ThemePulse asks: *"Where is institutional money flowing RIGHT NOW?"*
 NVIDIA is a great semiconductor company → BUY NVDA
 ```
 
-**ThemePulse Approach:**
+**TABELA Approach:**
 ```
 Institutional money is flowing into "AI Accelerators" ETFs
   ↓
@@ -130,11 +130,11 @@ python --version
 # Should show: Python 3.9.x or higher
 ```
 
-#### 2. Download ThemePulse
+#### 2. Download TABELA
 ```bash
 # If not already downloaded
 git clone <repository_url>
-cd c:\ThemePulse
+cd c:\TABELA
 ```
 
 #### 3. Install Dependencies
@@ -149,7 +149,7 @@ python -c "import pandas; print(pandas.__version__)"
 
 #### 4. Prepare Data Directory
 ```bash
-# ThemePulse needs:
+# TABELA needs:
 # • stocks.csv (in project root)
 # • ETF.csv (in project root)
 # • history/ folder (auto-created if missing)
@@ -184,7 +184,7 @@ python main.py
 
 **Basic Run:**
 ```bash
-cd c:\ThemePulse
+cd c:\TABELA
 python main.py
 ```
 
@@ -203,7 +203,7 @@ python main.py
 **Expected Console Output:**
 ```
 ╔════════════════════════════════════════════════════════════════╗
-║                   THEMEPULSE MARKET SCAN                       ║
+║                   TABELA MARKET SCAN                       ║
 ║                      2026-06-19                                ║
 ╚════════════════════════════════════════════════════════════════╝
 
@@ -222,10 +222,10 @@ Leading Themes:
 
 **Windows - Task Scheduler:**
 1. Open Task Scheduler
-2. Create Basic Task → "ThemePulse Daily"
+2. Create Basic Task → "TABELA Daily"
 3. Trigger: Daily, 4:00 PM
 4. Action: Start program `python.exe`
-5. Add arguments: `C:\ThemePulse\main.py`
+5. Add arguments: `C:\TABELA\main.py`
 6. Run with highest privileges
 
 **Mac/Linux - Cron:**
@@ -234,7 +234,7 @@ Leading Themes:
 crontab -e
 
 # Add this line (runs daily at 4 PM)
-0 16 * * * cd /path/to/ThemePulse && python main.py
+0 16 * * * cd /path/to/TABELA && python main.py
 ```
 
 ---
@@ -489,7 +489,7 @@ Interpretation: Cloud/Semi losing favor; Autonomous/Defense gaining
 3. **Focus on high-ranked candidates** (1-15 have best odds)
 4. **Verify themes make sense** (does the stock really fit that narrative?)
 5. **Use breadth as context** (>70% breadth = strong conviction)
-6. **Combine with your research** (ThemePulse finds opportunities; you verify them)
+6. **Combine with your research** (TABELA finds opportunities; you verify them)
 7. **Build positions gradually** (don't go all-in on rank 1)
 8. **Monitor marked stocks (*)** (these are pure institutional flow plays)
 
@@ -545,7 +545,7 @@ FileNotFoundError: [Errno 2] No such file or directory: 'stocks.csv'
 ```
 
 **Solution:**
-1. Verify stocks.csv is in c:\ThemePulse folder
+1. Verify stocks.csv is in c:\TABELA folder
 2. Check file name spelling (case-sensitive on Mac/Linux)
 3. Make sure file is not named stocks.txt or stocks.xlsx
 

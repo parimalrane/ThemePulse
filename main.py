@@ -304,7 +304,7 @@ theme_breadth = build_theme_breadth(stocks)
 
 
 # ==========================================
-# FINAL OUTPUT — THEMEPULSE DAILY SCAN
+# FINAL OUTPUT — TABELA DAILY SCAN
 # ==========================================
 
 import datetime
@@ -386,7 +386,7 @@ long_candidates = long_candidates.sort_values(
 
 print("\n")
 print("==============================================")
-print("THEMEPULSE DAILY MARKET SCAN")
+print("TABELA DAILY MARKET SCAN")
 print("DATE:", today)
 print("==============================================")
 print("\n")
@@ -653,6 +653,6 @@ save_daily_snapshot(
 
 print("\n")
 print("==============================================")
-print("END OF THEMEPULSE SCAN")
+print("END OF TABELA SCAN")
 print("==============================================")
 

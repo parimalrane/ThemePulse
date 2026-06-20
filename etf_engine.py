@@ -1,5 +1,5 @@
 import pandas as pd
-from allowed_etfs import ALLOWED_ETFS
+
 
 # ---------------------------------------------------
 # ETF Valid Categories

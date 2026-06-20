@@ -1,9 +1,9 @@
 # VERSION_HISTORY.md
 
-# THEMEPULSE PROJECT VERSION HISTORY
+# TABELA PROJECT VERSION HISTORY
 
 ============================================================
-THEMEPULSE V1
+TABELA V1
 =============
 
 Release Date: 2026-06-12
@@ -14,7 +14,7 @@ Status: Production Ready
 
 ## PROJECT DESCRIPTION
 
-ThemePulse is a proprietary institutional capital rotation research engine.
+TABELA is a proprietary institutional capital rotation research engine.
 
 Primary Objective:
 
@@ -216,7 +216,7 @@ Frozen
 
 ## CURRENT OUTPUT CAPABILITIES
 
-ThemePulse Daily Market Scan generates:
+TABELA Daily Market Scan generates:
 
 1. Market Rotation Summary
 
@@ -378,7 +378,7 @@ Theme Rotation Investing
 
 ## PROJECT STATUS
 
-ThemePulse V1
+TABELA V1
 
 Production Ready
 
@@ -416,7 +416,7 @@ V1.1
 
 Long Term Vision:
 
-ThemePulse Pro
+TABELA Pro
 
 Created: 2026-06-12
 Architecture Frozen: YES
@@ -655,7 +655,7 @@ Completed:
 
 Architecture philosophy locked:
 
-ThemePulse prioritizes accelerating institutional capital rotation rather than established market leaders.
+TABELA prioritizes accelerating institutional capital rotation rather than established market leaders.
 
 
 

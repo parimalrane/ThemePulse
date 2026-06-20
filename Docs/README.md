@@ -1,12 +1,12 @@
-# ThemePulse — Market Theme Rotation Scanner
+# TABELA — Market Theme Rotation Scanner
 
 **Version 3.1** | Production-Ready Research Tool
 
-ThemePulse is an intelligent market scanning system that identifies attractive long and short stock opportunities by analyzing **institutional capital flows through ETF theme rotation** combined with multi-factor stock-level scoring.
+TABELA is an intelligent market scanning system that identifies attractive long and short stock opportunities by analyzing **institutional capital flows through ETF theme rotation** combined with multi-factor stock-level scoring.
 
 ## Core Concept
 
-Traditional stock analysis classifies companies by sector (e.g., "semiconductors"). ThemePulse takes a different approach: it classifies stocks by the **current institutional narrative** (e.g., META as "AI Platform" rather than "social media"). By tracking which themes attract institutional capital through ETF inflows, ThemePulse dynamically detects emerging market opportunities and fading trends.
+Traditional stock analysis classifies companies by sector (e.g., "semiconductors"). TABELA takes a different approach: it classifies stocks by the **current institutional narrative** (e.g., META as "AI Platform" rather than "social media"). By tracking which themes attract institutional capital through ETF inflows, TABELA dynamically detects emerging market opportunities and fading trends.
 
 ---
 
@@ -163,7 +163,7 @@ ls history/  # See daily JSON files
 
 ```
 ╔════════════════════════════════════════════════════════════════╗
-║                   THEMEPULSE MARKET SCAN                       ║
+║                   TABELA MARKET SCAN                       ║
 ║                      2026-06-19                                ║
 ╚════════════════════════════════════════════════════════════════╝
 
@@ -282,7 +282,7 @@ Find stocks aligned with institutional narratives before broader market recognit
 
 ## Important Notes
 
-- **Research Tool, Not Trading Signal** — ThemePulse identifies opportunities for analysis; not a trading system
+- **Research Tool, Not Trading Signal** — TABELA identifies opportunities for analysis; not a trading system
 - **Daily Updates Required** — Requires fresh stocks.csv and ETF.csv files from Zacks daily
 - **No Real-Time Feed** — Uses static daily exports; not suitable for intraday trading
 - **Prototype Status** — ~90% complete; gaps include real-time data integration and enhanced error handling

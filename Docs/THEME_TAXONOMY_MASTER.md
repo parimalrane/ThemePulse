@@ -1,10 +1,10 @@
-# THEMEPULSE TAXONOMY MASTER
+# TABELA TAXONOMY MASTER
 
 ## PURPOSE
 
 Maintain business narrative → theme → stock relationship.
 
-ThemePulse does not assume themes remain static forever.
+TABELA does not assume themes remain static forever.
 
 Weekly/monthly maintenance updates this file first.
 

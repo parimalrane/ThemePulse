@@ -1,10 +1,10 @@
-# THEMEPULSE ENGINEERING CONTINUITY CONTEXT
+# TABELA ENGINEERING CONTINUITY CONTEXT
 
 ============================================================
 PROJECT IDENTITY
 ================
 
-ThemePulse is a proprietary institutional capital rotation research engine.
+TABELA is a proprietary institutional capital rotation research engine.
 
 Primary Objective:
 
@@ -26,7 +26,7 @@ CURRENT PROJECT STATUS
 
 Version:
 
-ThemePulse V1
+TABELA V1
 
 Status:
 
@@ -46,7 +46,7 @@ No immediate architecture modifications allowed until sufficient live market obs
 CURRENT SYSTEM ARCHITECTURE
 ===========================
 
-ThemePulse operates as a unified production system.
+TABELA operates as a unified production system.
 
 Architecture evolved from:
 
@@ -54,7 +54,7 @@ Theme Rotation Scan (Prompt Based CSV Analysis)
 
 ↓
 
-ThemePulse Python Engine
+TABELA Python Engine
 
 Current architecture is fully modular.
 
@@ -150,7 +150,7 @@ Institutional Narrative > Classification Accuracy
 
 Decision 2
 
-ThemePulse V1 architecture is frozen.
+TABELA V1 architecture is frozen.
 
 Reason:
 
@@ -184,7 +184,7 @@ Protect architecture stability.
 
 Decision 4
 
-Single unified ThemePulse architecture is superior to splitting ETF + Stock engines separately.
+Single unified TABELA architecture is superior to splitting ETF + Stock engines separately.
 
 ============================================================
 KNOWN LIVE PRODUCTION OBSERVATIONS
@@ -320,7 +320,7 @@ Project 3 = Technical Setup Engine
 
 Purpose:
 
-Determine WHEN to enter after ThemePulse identifies candidates.
+Determine WHEN to enter after TABELA identifies candidates.
 
 Will Analyze:
 
@@ -352,7 +352,7 @@ Theme Quality Engine
 ENGINEERING WORKFLOW RULE
 =========================
 
-All future ThemePulse discussions happen ONLY in this single chat.
+All future TABELA discussions happen ONLY in this single chat.
 
 Allowed Discussions:
 
@@ -382,7 +382,7 @@ General Stock Discussions
 
 Rule:
 
-Avoid multiple ThemePulse chats.
+Avoid multiple TABELA chats.
 
 Preserve single engineering continuity.
 
@@ -394,7 +394,7 @@ If returning after long break:
 
 Start with:
 
-Continue ThemePulse.
+Continue TABELA.
 
 Then specify:
 

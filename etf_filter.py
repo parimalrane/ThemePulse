@@ -2,7 +2,7 @@ from config import ETF_FILTERS
 
 # ==========================================
 # ETF FILTER ENGINE
-# ThemePulse V2
+# TABELA V2
 # ==========================================
 
 EXCLUDE_KEYWORDS = [

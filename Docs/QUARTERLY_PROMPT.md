@@ -1,6 +1,6 @@
-ThemePulse Quarterly Theme Review
+TABELA Quarterly Theme Review
 
-Review my current ThemePulse classification database.
+Review my current TABELA classification database.
 
 Check whether any company below has changed institutional narrative.
 

@@ -1,7 +1,7 @@
 Prompt 1 — Monthly institutional review
 -------------------------------------------------------------------------
 
-Analyze attached ThemePulse historical snapshots.
+Analyze attached TABELA historical snapshots.
 
 Your job:
 
@@ -46,7 +46,7 @@ If you upload 30 days.
 Use:
 -------------------------------------------------------------------------
 
-Analyze attached ThemePulse historical files.
+Analyze attached TABELA historical files.
 
 Compare day-to-day market rotation changes.
 
@@ -76,7 +76,7 @@ Prompt 3 — Trade planning prompt
 -------------------------------------------------------------------------
 
 
-Review attached ThemePulse historical snapshots.
+Review attached TABELA historical snapshots.
 
 Based on institutional capital rotation patterns:
 
@@ -99,7 +99,7 @@ Future prompt you will use with me
 After 20–30 files exist.
 -------------------------------------------------------------------------
 
-Analyze ThemePulse historical snapshots.
+Analyze TABELA historical snapshots.
 
 Study institutional capital rotation behavior.
 

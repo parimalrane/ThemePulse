@@ -90,7 +90,7 @@ Themes with 1 stock should not outrank dominant institutional themes such as Sem
 
 SCORING PRINCIPLE
 
-ThemePulse scoring models must prioritize recent institutional behavior over historical performance.
+TABELA scoring models must prioritize recent institutional behavior over historical performance.
 
 Recent timeframes should carry higher weight than older timeframes.
 
@@ -145,4 +145,4 @@ But institutional capital detection requires filtering by ETF size.
 
 Small niche ETFs distort market rotation signals.
 
-ThemePulse must prioritize institutional-grade ETFs only.
+TABELA must prioritize institutional-grade ETFs only.

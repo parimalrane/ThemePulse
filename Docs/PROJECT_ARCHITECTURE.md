@@ -1,4 +1,4 @@
-# ThemePulse Project Architecture
+# TABELA Project Architecture
 
 **Version 3.1** | Stable Production Architecture | ~90% Complete
 
@@ -21,7 +21,7 @@
 ## System Overview
 
 ### Purpose
-ThemePulse detects **institutional capital rotation** by analyzing which market themes are gaining strength through ETF inflows, then identifies the highest-quality stocks within those themes.
+TABELA detects **institutional capital rotation** by analyzing which market themes are gaining strength through ETF inflows, then identifies the highest-quality stocks within those themes.
 
 ### Core Principle
 **Institutional narratives drive stock selection, not traditional sectors.**
@@ -821,7 +821,7 @@ Semiconductors:  Leading → Emerging (Leadership rotation)
 ### P2 — Rotation Delta Engine
 **Status:** High priority
 
-**Purpose:** Largest future edge in ThemePulse
+**Purpose:** Largest future edge in TABELA
 
 **Capability:** Compare snapshots to identify institutional rotation early
 
@@ -847,14 +847,14 @@ Semiconductors:  Leading → Emerging (Leadership rotation)
 ## Core Stock Selection Philosophy
 
 ### Key Principle
-ThemePulse prioritizes **accelerating institutional leaders**, not established market leaders.
+TABELA prioritizes **accelerating institutional leaders**, not established market leaders.
 
-### What ThemePulse Does NOT Do
+### What TABELA Does NOT Do
 - Identify the "best company"
 - Rank by revenue or market cap
 - Value or fundamental analysis
 
-### What ThemePulse DOES Do
+### What TABELA DOES Do
 - Identify where institutional capital is rotating **right now**
 - Prioritize recent acceleration over established leadership
 - Focus on swing trading opportunities, not long-term hold

@@ -31,7 +31,7 @@ Optional review.
 
 ChatGPT Prompt:
 
-ThemePulse Weekly Institutional Rotation Review
+TABELA Weekly Institutional Rotation Review
 
 Upload:
 

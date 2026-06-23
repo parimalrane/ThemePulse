@@ -731,3 +731,29 @@ Architecture principle:
 Data capability defines intelligence capability.
 
 Never force philosophy beyond available data.
+
+
+
+FUTURE ENHANCEMENT
+
+LEADERSHIP DETERIORATION ENGINE
+
+Purpose:
+
+Track 5–10 day history.
+
+Detect stocks previously appearing in Long Watchlist.
+
+Flag if:
+
+• RS deteriorates sharply
+• Theme deteriorates
+• Leadership disappears suddenly
+
+Goal:
+
+Identify abnormal institutional distribution behavior.
+
+Example target:
+
+PLTR style breakdown candidates.

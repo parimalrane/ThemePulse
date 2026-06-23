@@ -34,6 +34,9 @@ from engines.snapshot_engine import save_daily_snapshot
 from engines.rotation_engine import calculate_rotation_delta, print_rotation_report
 from engines.stock_history_engine import save_stock_history
 from engines.persistence_engine import print_persistence_report
+from engines.long_scoring_engine import calculate_long_score
+from engines.short_scoring_engine import calculate_short_score
+
 
 
 # ==========================================
@@ -273,6 +276,11 @@ stocks = calculate_margin_score(stocks)
 
 stocks = calculate_composite_score(stocks)
 
+stocks = calculate_long_score(stocks)
+
+stocks = calculate_short_score(stocks)
+
+
 save_stock_history(stocks)
 
 
@@ -295,14 +303,16 @@ theme_breadth = build_theme_breadth(stocks)
 today = datetime.date.today()
 
 long_watchlist = long_watchlist.sort_values(
-    "Composite_Score",
+    "Long_Score",
     ascending=False
 )
 
+
 short_watchlist = short_watchlist.sort_values(
-    "Composite_Score",
-    ascending=True
+    "Short_Score",
+    ascending=False
 )
+
 
 institutional_leaders = build_institutional_leaders(stocks)
 
@@ -329,10 +339,12 @@ long_candidates["Ticker"] = long_candidates.apply(
     axis=1
 )
 
+
 long_candidates = long_candidates.sort_values(
-    "Composite_Score",
+    "Long_Score",
     ascending=False
 )
+
 
 
 # ==========================================
@@ -419,7 +431,7 @@ print(
         "Mapped_Theme",
         "Theme_Class",
         "RS_Rating",
-        "Composite_Score"
+        "Long_Score"
     ]]
 
     .head(40).to_string(index=False)
@@ -431,6 +443,8 @@ print("\n\n")
 print("SHORT CANDIDATE UNIVERSE")
 print("----------------------------")
 
+
+
 print(
 
     short_watchlist[[
@@ -438,9 +452,9 @@ print(
         "Mapped_Theme",
         "Theme_Class",
         "RS_Rating",
-        "Composite_Score"
+        "Short_Score"
     ]]
-
+    
     .head(40).to_string(index=False)
 
 )

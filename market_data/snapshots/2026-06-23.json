@@ -1,0 +1,215 @@
+{
+    "date": "2026-06-23",
+    "metadata": {
+        "stock_count": 2413,
+        "long_candidates": 100,
+        "weakness_candidates": 176
+    },
+    "leading_themes": [
+        "Semiconductors",
+        "Telecom",
+        "Artificial Intelligence",
+        "Software",
+        "Rare Earth/Lithium",
+        "Copper Mining",
+        "Steel",
+        "Transportation/Shipping"
+    ],
+    "emerging_themes": [
+        "Infrastructure",
+        "Engineering and Construction",
+        "Banking",
+        "Healthcare",
+        "Copper",
+        "Biotech",
+        "Regional Banks",
+        "Pharma",
+        "REITs"
+    ],
+    "weakening_themes": [
+        "Brokers/ Capital markets",
+        "Nuclear Power",
+        "Crude Oil",
+        "Aerospace & Defense",
+        "Retail",
+        "MLP",
+        "Insurance",
+        "Leisure and Entertainment",
+        "Timber"
+    ],
+    "lagging_themes": [
+        "Brent Oil",
+        "Agribusiness",
+        "Exploration",
+        "Cloud Computing",
+        "Internet",
+        "Uranium Mining",
+        "natural gas",
+        "Natural Gas",
+        "Medical Devices"
+    ],
+    "top_longs": [
+        {
+            "ticker": "CRDO",
+            "score": 99.6
+        },
+        {
+            "ticker": "MU",
+            "score": 97.6
+        },
+        {
+            "ticker": "STX",
+            "score": 97.6
+        },
+        {
+            "ticker": "ALAB",
+            "score": 95.6
+        },
+        {
+            "ticker": "NBIS",
+            "score": 95.6
+        },
+        {
+            "ticker": "OUST",
+            "score": 94.7
+        },
+        {
+            "ticker": "MRVL",
+            "score": 93.6
+        },
+        {
+            "ticker": "SNDK",
+            "score": 93.6
+        },
+        {
+            "ticker": "SIMO",
+            "score": 92.6
+        },
+        {
+            "ticker": "AMD",
+            "score": 92.2
+        },
+        {
+            "ticker": "AAOI",
+            "score": 92.2
+        },
+        {
+            "ticker": "PENG",
+            "score": 91.6
+        },
+        {
+            "ticker": "MXL",
+            "score": 91.1
+        },
+        {
+            "ticker": "ARM",
+            "score": 90.6
+        },
+        {
+            "ticker": "DELL",
+            "score": 91.7
+        },
+        {
+            "ticker": "LRCX",
+            "score": 92.5
+        },
+        {
+            "ticker": "APPS",
+            "score": 90.6
+        },
+        {
+            "ticker": "PDFS",
+            "score": 91.3
+        },
+        {
+            "ticker": "ALGM",
+            "score": 91.3
+        },
+        {
+            "ticker": "AIP",
+            "score": 90.7
+        }
+    ],
+    "top_weakness": [
+        {
+            "ticker": "SOC",
+            "score": 17.4
+        },
+        {
+            "ticker": "OPCH",
+            "score": 24.4
+        },
+        {
+            "ticker": "PBH",
+            "score": 19.4
+        },
+        {
+            "ticker": "DOCS",
+            "score": 26.4
+        },
+        {
+            "ticker": "VTS",
+            "score": 25.4
+        },
+        {
+            "ticker": "AORT",
+            "score": 26.4
+        },
+        {
+            "ticker": "CLPBY",
+            "score": 24.9
+        },
+        {
+            "ticker": "GEHC",
+            "score": 24.9
+        },
+        {
+            "ticker": "CLB",
+            "score": 24.9
+        },
+        {
+            "ticker": "BSX",
+            "score": 27.4
+        },
+        {
+            "ticker": "INSP",
+            "score": 27.4
+        },
+        {
+            "ticker": "CRK",
+            "score": 34.4
+        },
+        {
+            "ticker": "ZTS",
+            "score": 26.4
+        },
+        {
+            "ticker": "MDLN",
+            "score": 27.4
+        },
+        {
+            "ticker": "PRGO",
+            "score": 21.4
+        },
+        {
+            "ticker": "IRTC",
+            "score": 29.4
+        },
+        {
+            "ticker": "QDEL",
+            "score": 21.4
+        },
+        {
+            "ticker": "OLMA",
+            "score": 21.4
+        },
+        {
+            "ticker": "OCS",
+            "score": 33.4
+        },
+        {
+            "ticker": "ATEC",
+            "score": 29.4
+        }
+    ]
+}

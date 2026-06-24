@@ -35,6 +35,7 @@ from engines.rotation_engine import calculate_rotation_delta, print_rotation_rep
 from engines.stock_history_engine import save_stock_history
 from engines.long_scoring_engine import calculate_long_score
 from engines.short_scoring_engine import calculate_short_score
+from engines.unknown_classification_engine import save_unknown_classification
 
 
 
@@ -519,6 +520,23 @@ rotation_data = calculate_rotation_delta()
 print_rotation_report(rotation_data)
 
 
+# ==========================================
+# UNKNOWN CLASSIFICATION REPORT
+# ==========================================
+
+
+
+
+
+try:
+
+    save_unknown_classification(stocks)
+
+except Exception as e:
+
+    print()
+
+    print("UNKNOWN CLASSIFICATION ERROR:", e)
 
 print("\n")
 print("==============================================")

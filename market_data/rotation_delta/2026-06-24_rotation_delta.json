@@ -5,32 +5,7 @@
     "exits": [],
     "category_changes": [
         {
-            "theme": "Healthcare",
-            "from": "Emerging",
-            "to": "Leading"
-        },
-        {
-            "theme": "Banking",
-            "from": "Emerging",
-            "to": "Leading"
-        },
-        {
-            "theme": "Copper",
-            "from": "Emerging",
-            "to": "Weakening"
-        },
-        {
-            "theme": "Crude Oil",
-            "from": "Weakening",
-            "to": "Emerging"
-        },
-        {
-            "theme": "Brent Oil",
-            "from": "Lagging",
-            "to": "Weakening"
-        },
-        {
-            "theme": "Copper Mining",
+            "theme": "Steel",
             "from": "Leading",
             "to": "Emerging"
         },
@@ -40,9 +15,34 @@
             "to": "Lagging"
         },
         {
-            "theme": "Steel",
+            "theme": "Copper Mining",
             "from": "Leading",
             "to": "Emerging"
+        },
+        {
+            "theme": "Healthcare",
+            "from": "Emerging",
+            "to": "Leading"
+        },
+        {
+            "theme": "Crude Oil",
+            "from": "Weakening",
+            "to": "Emerging"
+        },
+        {
+            "theme": "Copper",
+            "from": "Emerging",
+            "to": "Weakening"
+        },
+        {
+            "theme": "Brent Oil",
+            "from": "Lagging",
+            "to": "Weakening"
+        },
+        {
+            "theme": "Banking",
+            "from": "Emerging",
+            "to": "Leading"
         }
     ]
 }

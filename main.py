@@ -28,7 +28,7 @@ from engines.institutional_leaders_engine import build_institutional_leaders
 from core.theme_hierarchy import THEME_PARENT_MAP
 from engines.etf_filter import filter_valid_etfs
 from engines.etf_filter import filter_institutional_etfs
-
+from engines.watchlist_delta_engine import compare_watchlists
 # NEW IMPORT PATHS
 from engines.snapshot_engine import save_daily_snapshot
 from engines.stock_history_engine import save_stock_history
@@ -472,6 +472,11 @@ short_list = ",".join(
 
 print("###LONG," + long_list + ",")
 print("###SHORT," + short_list)
+
+compare_watchlists(
+    long_candidates["Ticker"].head(50).tolist(),
+    short_watchlist["Ticker"].head(50).tolist()
+)
 
 
 # ==========================================

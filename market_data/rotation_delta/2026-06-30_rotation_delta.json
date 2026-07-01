@@ -3,5 +3,16 @@
     "compared_against": "2026-06-29",
     "new_entries": [],
     "exits": [],
-    "category_changes": []
+    "category_changes": [
+        {
+            "theme": "Agribusiness",
+            "from": "Weakening",
+            "to": "Lagging"
+        },
+        {
+            "theme": "Internet",
+            "from": "Lagging",
+            "to": "Weakening"
+        }
+    ]
 }
